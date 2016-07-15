@@ -1,0 +1,46 @@
+.alarm-section {
+    padding: 2em;
+    background-color: #F2F2F2;
+}
+
+.cctv-section {
+    padding: 2em;
+    background-color: #F2F2F2;
+}
+
+.monitoring-section {
+    padding: 2em;
+    background-color: #F2F2F2;
+}
+
+.alarm-section 
+.cctv-section 
+.monitoring-section {
+    margin-bottom: 6em;
+    overflow: hidden;
+    height: 20em;
+}
+
+.alarms-pic {
+    background: url('./assets/images/buglar-alarm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.cctv-pic {
+    background: url('./assets/images/cctv-product.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.monitoring-pic {
+    background: url('./assets/images/cctv-monitoring.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1em;
+    margin-right: 1em;
+}
