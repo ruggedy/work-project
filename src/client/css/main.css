@@ -12,6 +12,14 @@ div {
   box-sizing: border-box;
 }
 
+/*reset bootstrap*/
+
+[class^= 'col-'],
+[class*= 'col-'] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /* Set up a default font and some padding to provide breathing room */
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -38,26 +46,3 @@ li {
   margin-top: 4px;
 }
 
-input {
-  border: 1px solid #106cc8;
-  font-size: 14px;
-  height: 40px;
-  outline: none;
-  padding: 8px;
-}
-
-button {
-  background-color: #106cc8;
-  border-style: none;
-  color: rgba(255, 255, 255, 0.87);
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  height: 40px;
-  padding: 8px 18px;
-  text-decoration: none;
-}
-
-button:hover {
-  background-color: #28739e;
-}

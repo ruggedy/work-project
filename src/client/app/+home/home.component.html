@@ -1,14 +1,19 @@
-<p>
-  Howdy! Here's a list of awesome computer scientists.
-  Do you know any others? Add to the list yourself.
-</p>
+<div class="row">
+    <div class="col-md-8">
 
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
-</form>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="home-security">
 
-
-<ul>
-  <li *ngFor="let name of nameListService.get() | async">{{name}}</li>
-</ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="business-security">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
