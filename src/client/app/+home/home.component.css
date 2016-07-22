@@ -77,7 +77,7 @@
 
 /*-- call to action --*/
 .call-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/images/cctv-operator.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   height: 40vh;
   width: 60%;
   background-repeat: no-repeat;

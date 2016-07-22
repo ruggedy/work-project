@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { REACTIVE_FORM_DIRECTIVES } from '@angular/forms';
 import { ROUTER_DIRECTIVES } from '@angular/router';
-
-import { NameListService } from '../shared/index';
+import { CAROUSEL_DIRECTIVES } from 'ng2-bootstrap';
+import { CarouselComponent } from '../carousel/index';
 
 /**
  * This class represents the lazy loaded HomeComponent.
@@ -12,7 +12,7 @@ import { NameListService } from '../shared/index';
   selector: 'sd-home',
   templateUrl: 'home.component.html',
   styleUrls: ['home.component.css'],
-  directives: [REACTIVE_FORM_DIRECTIVES, ROUTER_DIRECTIVES]
+  directives: [REACTIVE_FORM_DIRECTIVES, ROUTER_DIRECTIVES, CarouselComponent]
 })
 export class HomeComponent {
 
@@ -24,16 +24,12 @@ export class HomeComponent {
    *
    * @param {NameListService} nameListService - The injected NameListService.
    */
-  constructor(public nameListService: NameListService) {}
+  constructor() {}
 
   /**
    * Calls the add method of the NameListService with the current newName value of the form.
    * @return {boolean} false to prevent default form submit behavior to refresh the page.
    */
-  addName(): boolean {
-    this.nameListService.add(this.newName);
-    this.newName = '';
-    return false;
-  }
+
 
 }

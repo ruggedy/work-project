@@ -14,6 +14,14 @@ export class ProjectConfig extends SeedConfig {
     super();
     // this.APP_TITLE = 'Put name of your app here';
 
+    // External Dependencies
+    this.SYSTEM_CONFIG_DEV.paths['ng2-bootstrap'] = 
+      `${this.APP_BASE}node_modules/ng2-bootstrap/ng2-bootstrap`;
+
+    this.SYSTEM_BUILDER_CONFIG.packages['ng2-bootstrap'] = {
+        main: 'ng2-bootstrap.js',
+        defaultExtension: 'js'
+    }
     // Add `NPM` third-party libraries to be injected/bundled.
     this.NPM_DEPENDENCIES = [
       ...this.NPM_DEPENDENCIES,
