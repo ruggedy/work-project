@@ -13,7 +13,10 @@ div {
 }
 
 /*reset bootstrap*/
-
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 [class^= 'col-'],
 [class*= 'col-'] {
     padding-left: 0;
@@ -44,5 +47,10 @@ ul {
 li {
   font-weight: 400;
   margin-top: 4px;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 

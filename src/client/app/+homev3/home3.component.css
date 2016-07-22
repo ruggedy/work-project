@@ -1,3 +1,4 @@
+
 /*--- header-nav ---*/
 
 .header-nav {
@@ -57,7 +58,7 @@
 
 .container-custom {
     width: 100%;
-    padding: 0 5%;
+    padding: 0 15%;
     margin-top: 4em;
     text-align: center;
 }
@@ -66,8 +67,51 @@
     color: white;
 }
 
+.landing .container-custom h1 {
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
 
-/*-- Line break --*/
+.landing .container-custom p {
+    font-size: .9em;
+}
+
+.landing .container-custom>a {
+    display: block;
+    cursor: pointer;
+    width: 8em;
+    height: 2.5em;
+    border: 1px solid #2980b9;
+    border-radius: 4px;
+    color: #2980b9;
+    font-weight: 400;
+    text-align: center;
+    padding: .5em 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    margin-top: 3em;
+}
+
+/*-- Product Image ---*/
+
+.landing .container-custom .product-pic {
+    margin-top: 4em;
+}
+
+.landing .container-custom .product-pic img {
+    display: inline-block;
+    width: 15%;
+    margin-right: 5%;
+}
+
+.landing .container-custom .product-pic img:nth-child(2) {
+    width: 8%;
+    margin-left: 5%;
+}
+
+/*--- line-break ---*/
 
 .line-break {
     width: 100%;
@@ -75,61 +119,13 @@
     background: linear-gradient(90deg, rgb(32, 99, 143), rgb(50, 147, 210) 50%, rgb(41, 128, 185));
 }
 
-/*-- call to action --*/
-.call-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/images/cctv-operator.jpg');
-  height: 40vh;
-  width: 60%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  padding: 1em;
-}
-
-.call-action span {
-    display: block;
-    font-size: .9em;
-    text-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2);
-}
-
-.call-action span:first-child {
-    margin-top: 13em;
-    font-size: 1.5em;
-}
-
-/*--- Home Section -----*/
-
-.home-security {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4),  rgba(0, 0, 0, 0.4)), url('./assets/images/IMG_0577.JPG');
-  height: 35vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 .6em .3em;
-  padding: 3em;
-  color: white
-}
-
-/*-- Business Security section -----*/
-
-.business-security {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/images/office-cctv.jpg');
-  height: 35vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: .3em .6em .6em;
-  padding: 3em;
-  color: white;
-}
-
 /*-- Pricing Cards Container ---*/
 .pricing-cards {
     margin-bottom: 10em;
 }
 
-.pricing-cards .row .col-md-3, 
-.pricing-cards .row .col-md-6 {
+.pricing-cards .container-custom .row .col-md-3, 
+.pricing-cards .container-custom .row .col-md-6 {
     padding: 0 .3em;
     color: black;
 }
@@ -251,41 +247,66 @@
     font-size: 1.5em;
 }
 
-/*-- Similar setting for Home Security and business sections*/
-.home-security span, 
-.business-security span {
-    display: block;
-    font-size: .9em;
-    letter-spacing: 2px;
-    margin-top: .6em;
+/*--- service-promoting--*/
+
+.service-promoting .container-custom{
+    color: black;
+    padding-bottom: 2.3em;
+    border-bottom: 1px solid #ebebeb;
 }
 
-.home-security span:first-child,
-.business-security span:first-child {
+.service-promoting .container-custom h2{
+    margin-bottom: 2.3em;
+}
+
+.service-promoting .col-md-4 {
+    padding: 0 .3em;
+}
+
+.service-promoting .col-md-4 img {
+    width: auto;
+    height: 15em;
+}
+
+.service-promoting ul {
+    padding: 0;
+    margin: 0;
+}
+
+.service-promoting ul li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.service-promoting ul li h4 {
     font-size: 1.3em;
-    letter-spacing: 2px;
-    text-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2);
-    margin-top: 5.5em;
 }
 
-.home-security a,
-.business-security a {
-    cursor: pointer;
-    float: right;
-    width: 11em;
-    height: 3em;
-    background-color: #106cc8;
-    border: 2px solid #106cc8;
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    text-align: center;
-    padding: .8em .4em 0;
+.service-promoting ul li p {
     font-size: .9em;
-    margin-top: 1em;
-    
+    color: #bdc3c7;
 }
 
+.service-promoting  .icon-circle {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-color: #2980b9;
+    float: right;
+    color: white;
+    font-size: 1.4em;
+    padding-top: .6em;
+    text-align: center;
+}
+
+.service-promoting .container-custom .row .col-md-4:last-child .icon-circle {
+    float: left;
+}
+
+.service-promoting .container-custom .row .col-md-4:last-child ul li {
+    text-align: right;
+}
 
 /*-- Testimonials --*/
 
@@ -327,55 +348,6 @@
     border-top: 10px solid #bdc3c7;
 }
 
-/*-- services-provided --*/
-
-.services-provided {
-    margin-bottom: 5em;
-}
-
-.services-provided .container-custom .row .col-md-3 {
-    margin-top: 1em;
-}
-
-.services-provided .container-custom .row .col-md-3 .service-container {
-    margin: 0 7.5%;
-    overflow: hidden;
-    position: relative;
-    height: 15em;
-}
-
-.services-provided .container-custom .row .col-md-3:nth-of-type(4n+1) .service-container {
-    margin: 0 10% 0 5%;
-}
-
-.services-provided .container-custom .row .col-md-3:nth-of-type(4n+4) .service-container {
-    margin: 0 5% 0 10%;
-}
-
-.services-provided .container-custom .row .col-md-3 .service-container img {
-    width: 100%;
-    height: auto;
-}
-
-.services-provided .container-custom .row .col-md-3 .service-container .service-info {
-    cursor: pointer;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(32, 45, 48, 0.8);
-    color: white;
-    transform: translateY(80%);
-    -webkit-transition: transform 300ms ease;
-    -moz-transition: transform 300ms ease;
-    transition: transform 300ms ease; 
-}
-
-.services-provided .container-custom .row .col-md-3 .service-container .service-info:hover {
-    transform: translateY(0);
-}
-
-
 /*--- footer ---*/
 
 .footer {
@@ -388,30 +360,27 @@
     text-align: left;
 }
 
-.footer .container-custom .col-md-4 {
+.footer .container-custom .col-md-3 {
     padding-right: 5em;
 }
 
-.footer .container-custom .col-md-4 p{
+.footer .container-custom .col-md-3 p{
     font-size: .8em;
 }
 
-.footer .container-custom .col-md-4 p i{
-    margin-right: .4em;
-}
-
-.footer .container-custom .col-md-4 ul{
+.footer .container-custom .col-md-3 ul{
     padding: 0;
     margin: 0;
 }
 
-.footer .container-custom .col-md-4 ul li{
+.footer .container-custom .col-md-3 ul li{
     list-style-type: none;
 }
 
-.footer .container-custom .col-md-4 ul li a{
+.footer .container-custom .col-md-3 ul li a{
     font-size: .8em;
     color: #f5f5f5;
     text-decoration: none;
     cursor: pointer;
 }
+

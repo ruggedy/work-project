@@ -1,0 +1,136 @@
+
+.call-action {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/images/IMG_0575.JPG');
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: .6em .6em .3em;
+  color: white;
+  padding: 1em;
+}
+
+.call-action span {
+    display: block;
+    font-size: .9em;
+    text-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.call-action span:first-child {
+    margin-top: 20em;
+    font-size: 1.5em;
+}
+
+/*--- Home Section -----*/
+
+.home-security {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4),  rgba(0, 0, 0, 0.4)), url('./assets/images/IMG_0577.JPG');
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: .6em .6em .3em;
+  padding: 3em;
+  color: white
+}
+
+/*-- Business Security section -----*/
+
+.business-security {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/images/office-cctv.jpg');
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: .3em .6em .6em;
+  padding: 3em;
+  color: white;
+}
+
+/*-- Similar setting for Home Security and business sections*/
+.home-security span, 
+.business-security span {
+    display: block;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-top: .6em;
+}
+
+.home-security span:first-child,
+.business-security span:first-child {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    text-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2);
+    margin-top: 11em;
+}
+
+.home-security a,
+.business-security a {
+    cursor: pointer;
+    float: right;
+    width: 11em;
+    height: 3em;
+    background-color: #106cc8;
+    border: 2px solid #106cc8;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    padding: .8em .4em 0;
+    font-size: .9em;
+    
+}
+
+
+
+/*--- testimonials ---*/
+.testimonials {
+  margin: 5em 1em 0;
+  text-align: center;
+}
+
+h2{
+  position: relative;
+}
+
+ h2::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: .1em;
+  width: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e0e0e0;
+}
+
+.testify {
+  margin-top: 2em;
+  background-color: #f5f5f5;
+  margin: 1.5em 2em 2em;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+blockquote {
+    padding: 2em;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    border-left: 0;
+    height: 17em;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 2em;
+    display: block;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+}
+
+cite {
+    font-size: .85em;
+    margin-top: 1.5em;
+    display: block;
+}
+
+

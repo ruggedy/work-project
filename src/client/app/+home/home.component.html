@@ -1,54 +1,282 @@
-<div class="row">
-    <div class="col-md-8">
+<div class="header-nav">
+    <div class="logo">
+        <img src="./assets/images/logo.png" alt="Logo">
+    </div>
+    <ul>
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+</div>
+<div class="landing">
+    <div></div>
+    <div class="container-custom">
         <div class="call-action">
             <span>Peace of Mind Quote</span>
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, temporibus.</span>
         </div>
-        <div class="testimonials">
-            <h2>Testimonials</h2>
+    </div>
+</div>
+<div class="line-break"></div>
+
+<div class="container-custom">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="pricing-cards">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="pricing-table">
+                            <div class="pricing-title">
+                                <h4>Starter Plan</h4>
+                            </div>
+                            <div class="pricing-price">
+                                65<sub>p</sub>
+                                <span>a Day</span>
+                            </div>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>One Free HD Camera</li>
+                                    <li>One Free Advanced Night Vision upgrade</li>
+                                    <li>One Free Hard Drive</li>
+                                    <li>Free Software Upgrades</li>
+                                    <li>Free Maintenance</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-button">
+                                <a href="">Purchase Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="pricing-table">
+                            <div class="pricing-title">
+                                <h4>Basic Plan</h4>
+                            </div>
+                            <div class="pricing-price">
+                                75<sub>p</sub>
+                                <span>a Day</span>
+                            </div>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>One Free HD Camera</li>
+                                    <li>One Free Advanced Night Vision upgrade</li>
+                                    <li>One Free Hard Drive</li>
+                                    <li>Free Software Upgrades</li>
+                                    <li>Free Maintenance</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-button">
+                                <a href="">Purchase Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="combo-service">
+                            <div class="pricing-title">
+                                <h4>Combo Service</h4>
+                            </div>
+                            <div class="pricing-price">
+                                129<sub>p</sub>
+                                <span>a Day</span>
+                            </div>
+                            <div class="combo-body">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="pricing-table">
+                                            <div class="pricing-title">
+                                                <h4>Starter Plan</h4>
+                                            </div>
+                                            <div class="pricing-content">
+                                                <ul>
+                                                    <li>One Free HD Camera</li>
+                                                    <li>One Free Advanced Night Vision upgrade</li>
+                                                    <li>One Free Hard Drive</li>
+                                                    <li>Free Software Upgrades</li>
+                                                    <li>Free Maintenance</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"><i class="fa fa-plus-square"></i></div>
+                                    <div class="col-md-5">
+                                        <div class="pricing-table">
+                                            <div class="pricing-title">
+                                                <h4>Basic Plan</h4>
+                                            </div>
+                                            <div class="pricing-content">
+                                                <ul>
+                                                    <li>One Free HD Camera</li>
+                                                    <li>One Free Advanced Night Vision upgrade</li>
+                                                    <li>One Free Hard Drive</li>
+                                                    <li>Free Software Upgrades</li>
+                                                    <li>Free Maintenance</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-button">
+                                <a href="">Purchase Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="testify">
-                        <blockquote>
-                            there were a spate of burglaries in the area, in particular on my street, BFCG added CCTV to my property, I know this acted as a deterrent and there monitoring service keeps a watchful eye on my property when I and my family are asleep
-                        <cite>Mr. Jacobs</cite>
-                        </blockquote>
+                <div class="col-md-12">
+                    <div class="home-security">
+                        <span>Home Security</span>
+                        <span>We Provide the best possible security options for you and your family ......</span>
+                        <a [routerLink]="['home-security']" class="button"> Secure your Home </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testify">
-                        <blockquote>
-                            having an alarm is all well and good, the CCTV monitoring service picked up an intruder in my front garden, BFCG was able to alert me and the police, they didn’t even get close to my front door Well Done BFCG
-                        <cite>Ms Tracy Adams</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testify">
-                        <blockquote>
-                            my children was playing in the front garden, I feel safe that BFCG is watching over them”, as a single mother I found the service to be far less expensive than other major companies
-                        <cite>Mrs Anderson</cite>
-                        </blockquote>
+                <div class="col-md-12">
+                    <div class="business-security">
+                        <span>Commercial Security</span>
+                        <span>Choose from our diverse selection of businesses tailored to suit a variety of business needs ......</span>
+                        <a [routerLink]="['business-security']" class="button"> Protect your business </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+</div>
+<div class="line-break"></div>
+<div class="testimonials">
+    <h2>What our customers say about us</h2>
+    <div class="container-custom">
         <div class="row">
-            <div class="col-md-12">
-                <div class="home-security">
-                    <span>Home Security</span>
-                    <span>We Provide the best possible security options for you and your family ......</span>
-                    <a [routerLink]="['home-security']" class="button"> Secure your Home </a>
+            <div class="col-md-4">
+                <blockquote>
+                    there were a spate of burglaries in the area, in particular on my street, BFCG added CCTV to my property, I know this acted as a deterrent and there monitoring service keeps a watchful eye on my property when I and my family are asleep
+                    <span></span>                    
+                </blockquote>
+                <h4>Mr Jacobs</h4>
+            </div>
+            <div class="col-md-4">
+                <blockquote>
+                    having an alarm is all well and good, the CCTV monitoring service picked up an intruder in my front garden, BFCG was able to alert me and the police, they didn’t even get close to my front door
+                    <p>Well done BFCG</p>
+                    <span></span>
+                </blockquote>
+                <h4>Ms Tracy Adams</h4>
+            </div>
+            <div class="col-md-4">
+                <blockquote>
+                    my children was playing in the front garden, I feel safe that BFCG is watching over them, as a single mother I found the service to be far less expensive than other major companies
+                    <span></span>
+                </blockquote>
+                <h4>Mrs Anderson</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line-break"></div>
+<div class="services-provided">
+    <div></div>
+    <div class="container-custom">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="service-container">
+                    <img src="./assets/images/cctv-service-1.jpg" alt="">
+                    <div class="service-info">
+                        <h3>Service</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-12">
-                <div class="business-security">
-                    <span>Commercial Security</span>
-                    <span>Choose from our diverse selection of businesses tailored to suit a variety of business needs ......</span>
-                    <a [routerLink]="['business-security']" class="button"> Protect your business </a>
+            <div class="col-md-3">
+                <div class="service-container">
+                    <img src="./assets/images/cctv-service-2.jpg" alt="">
+                    <div class="service-info">
+                        <h3>Service</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.</p>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-container">
+                    <img src="./assets/images/cctv-service-3.jpg" alt="">
+                    <div class="service-info">
+                        <h3>Service</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-container">
+                    <img src="./assets/images/cctv-service-4.jpg" alt="">
+                    <div class="service-info">
+                        <h3>Service</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-container">
+                    <img src="./assets/images/cctv-service-1.jpg" alt="">
+                    <div class="service-info">
+                        <h3>Service</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-container">
+                    <img src="./assets/images/cctv-service-2.jpg" alt="">
+                    <div class="service-info">
+                        <h3>Service</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-container">
+                    <img src="./assets/images/cctv-service-3.jpg" alt="">
+                    <div class="service-info">
+                        <h3>Service</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-container">
+                    <img src="./assets/images/cctv-service-4.jpg" alt="">
+                    <div class="service-info">
+                        <h3>Service</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line-break"></div>
+<div class="footer">
+    <div></div>
+    <div class="container-custom">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>About us</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti necessitatibus sed, consectetur. Ea minus unde tenetur. Debitis quod, doloremque suscipit cupiditate odio velit beatae possimus!</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="">something</a></li>
+                    <li><a href="">another</a></li>
+                    <li><a href="">a-third</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Company Address</h4>
+                <p><i class="fa fa-building-o"></i>Spencer & Arlington Ltd</p>
+                <p><i class="fa fa-map-marker"></i>221-223 Chingford Mount Road, Chingford, London, E4 8LP</p>
+                <p><i class="fa fa-phone"></i>020 8523 9090</p>
             </div>
         </div>
     </div>
